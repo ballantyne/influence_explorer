@@ -17,7 +17,11 @@ Or install it yourself as:
     $ gem install influence_explorer
 
 ## Usage
-    
+    # open a ruby prompt to try it out
+    irb
+
+    # then type
+
     require 'rubygems'
     require 'influence_explorer'
     InfluenceExplorer::Config.api_key = SUNLIGHT_FOUNDATION_KEY
