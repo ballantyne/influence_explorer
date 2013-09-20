@@ -25,7 +25,8 @@ Or install it yourself as:
 
     InfluenceExplorer::Contributions.new(:contributor_ft => 'Thomas Steyer') 
 
-    # There are many more api endpoints here http://data.influenceexplorer.com/api go look at the documentation.
+    # There are many more api endpoints here http://data.influenceexplorer.com/api 
+    #go look at the documentation.
 
 
 ## Contributing
