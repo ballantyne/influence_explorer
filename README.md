@@ -21,6 +21,7 @@ Or install it yourself as:
     require 'rubygems'
     require 'influence_explorer'
     InfluenceExplorer::Config.api_key = SUNLIGHT_FOUNDATION_KEY
+    # get your key here http://sunlightfoundation.com/api/
 
     InfluenceExplorer::Contributions.new(:contributor_ft => 'Thomas Steyer') 
 
