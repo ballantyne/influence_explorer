@@ -5,6 +5,10 @@ module InfluenceExplorer
   def self.base_url
     'http://transparencydata.com/api/1.0/'
   end
+
+  def request(endpoint, options)
+    RestClient.get 
+  end
 end
 
 
