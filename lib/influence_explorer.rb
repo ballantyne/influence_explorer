@@ -6,8 +6,9 @@ module InfluenceExplorer
     'http://transparencydata.com/api/1.0/'
   end
 
-  def request(endpoint, options)
-    RestClient.get 
+  def self.request(endpoint, options)
+    opts = options.merge(:apikey => InfluenceExplorer::Config.api_key)
+    RestClient.get base_url + endpoint,  opts
   end
 end
 
