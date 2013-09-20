@@ -7,8 +7,9 @@ module InfluenceExplorer
   end
 
   def self.request(endpoint, options)
-    opts = options.merge(:apikey => InfluenceExplorer::Config.api_key)
-    RestClient.get base_url + endpoint,  opts
+    url = base_url + endpoint + CGI::escape(options)
+    puts url
+    RestClient.get url, 'X-APIKEY' => InfluenceExplorer::Config.api_key
   end
 end
 
