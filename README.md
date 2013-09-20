@@ -1,6 +1,6 @@
 # InfluenceExplorer
 
-TODO: Write a gem description
+A quick api wrapper for the Sunlight Foundation Influence Explorer api.  I couldn't get the other one to work because of dependencies.
 
 ## Installation
 
@@ -17,8 +17,13 @@ Or install it yourself as:
     $ gem install influence_explorer
 
 ## Usage
+    
+    require 'rubygems'
+    require 'influence_explorer'
+    InfluenceExplorer::Config.api_key = SUNLIGHT_FOUNDATION_KEY
 
-TODO: Write usage instructions here
+    InfluenceExplorer::Contributions.new(:contributor_ft => 'Thomas Steyer') 
+
 
 ## Contributing
 
